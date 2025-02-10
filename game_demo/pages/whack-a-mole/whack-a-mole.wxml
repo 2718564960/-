@@ -1,0 +1,27 @@
+<view class="container">
+  <!-- 计分和时间 -->
+  <view class="header">
+    <text class="score">分数: {{score}}</text>
+    <text class="timer">剩余时间: {{time}}s</text>
+  </view>
+
+  <!-- 3x3 地洞布局 -->
+  <view class="grid">
+    <block wx:for="{{holes}}" wx:key="index">
+      <view class="hole" bindtap="hitMole" data-index="{{index}}">
+        <!-- 地洞背景 -->
+        <image class="hole-image" src="/images/hole.png" mode="aspectFit"></image>
+        <!-- 地鼠 (根据状态显示普通/被打的形象) -->
+        <image 
+          class="mole-image {{item.hit ? 'hit' : ''}}" 
+          wx:if="{{item.moleVisible}}" 
+          src="{{item.hit ? hitMoleSrc : moleSrc}}" 
+          mode="aspectFit">
+        </image>
+      </view>
+    </block>
+  </view>
+
+  <!-- 开始游戏按钮 -->
+  <button wx:if="{{!gameStarted}}" bindtap="startGame" class="start-btn">开始游戏</button>
+</view>
