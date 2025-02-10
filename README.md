@@ -20,13 +20,13 @@
 ## 安装和运行
 1. **将代码克隆到本地**
 ```sh
-git clone https://github.com/yourusername/whack-a-mole.git
+git clone https://github.com/2718564960/whack-a-mole.git
 cd whack-a-mole
 ```
 
 2. **打开 WeChat Developer Tool (微信开发者工具)**
    - 点击 **打开项目**
-   - 选择 **whack-a-mole** 目录
+   - 选择 **whack-a-mole/demo** 目录
    - 将 `project.config.json` 加载
 
 3. **运行小程序**
