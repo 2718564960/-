@@ -4,7 +4,7 @@
 
 ---
 
-![游戏截图](images/game_screenshot.png)
+<img src="images/game_screenshot.png" alt="游戏截图" width="300">
 
 ## 游戏特性
 - 【3x3布局】 每次随机一个地洞出现鼠
